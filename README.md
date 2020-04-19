@@ -1,18 +1,24 @@
-# getfit
+# Squat Assistant
+-Std. Format for data:
+    -log2_x.csv and log2_y.csv under data
 
-## V0 features
-- ~~Get tflite working~~
-- ~~Get eval (non blocking, and low memory footprint)~~
-- ~~Draw skeleton on canvas~~
-- ~~Plot x,y of keypoint against time - debig tool~~
-- Package the camera/tf eval functions to run on button press (debugging right now is too slow)
-- Explore pose matching 
-    - Heuristics
-    - Select 2 exercises for MVP
+- Explore pose matching for Kim/Meher/Kathy
+    - Feature Engineering
+        -Angle at knee
+        -Angle at Hip
+        -Difference in X between knee and ankle
+        -Difference in Y between hip and knee
+    - Classification by Machine Learning 
+        -Basic Neural Net
+        -Random Forest
+        -SVM
+        -XGBoost
+        -etc
+    - Classification by Matching Averages
+        -Calculate Mean and Std.Deviation for each feature and classify as good or bad based on whether the test value falls wihtin n            std deviations of the mean. 
 
 ## Instruction to run
 This is currently only a simple html-css-js project. Frameworks may be added when the simplicity becomes a bottleneck. 
-
 To run, download the repo and just start a simple server 
 ```
 python -m http.server
