@@ -2,19 +2,19 @@
 Sample format of training JSON files: log_nn.json
 
 Explore pose matching for Kim/Meher/Kathy
-    - Feature Engineering
-        -Angle at knee
-        -Angle at Hip
-        -Difference in X between knee and ankle
-        -Difference in Y between hip and knee
-    - Classification by Machine Learning 
-        -Basic Neural Net
-        -Random Forest
-        -SVM
-        -XGBoost
-        -etc
-    - Classification by Matching Averages
-        -Calculate Mean and Std.Deviation for each feature and classify as good or bad based on whether the test value falls wihtin n            std deviations of the mean. 
+- Feature Engineering
+  - Angle at knee
+  - Angle at Hip
+  - Difference in X between knee and ankle
+  - Difference in Y between hip and knee
+- Classification by Machine Learning 
+  - Basic Neural Net
+  - Random Forest
+  - SVM
+  - XGBoost
+  - etc
+- Classification by Matching Averages
+  - Calculate Mean and Std.Deviation for each feature and classify as good or bad based on whether the test value falls wihtin n            std deviations of the mean. 
 
 ## Instruction to run
 This is currently only a simple html-css-js project. Frameworks may be added when the simplicity becomes a bottleneck. 
