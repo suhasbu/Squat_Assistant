@@ -1,7 +1,7 @@
 # Squat Assistant
 Sample format of training JSON files: log_nn.json
 
-Explore pose matching for Kim/Meher/Kathy
+##Explore pose matching for Kim/Meher/Kathy
 - Feature Engineering
   - Angle at knee
   - Angle at Hip
