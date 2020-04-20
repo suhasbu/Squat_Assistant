@@ -1,6 +1,9 @@
 ## Squat Assistant
 Sample format of training JSON files: log_nn.json
 
+## Data Augmentation Ideas for Franco
+- Sample more non-apex (but near-apex) frames to use as bad squats
+
 ## Explore pose matching for Kim/Meher/Kathy
 - Feature Engineering
   - Angle at knee
