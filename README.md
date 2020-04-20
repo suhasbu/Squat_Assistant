@@ -1,6 +1,5 @@
 # Squat Assistant
--Std. Format for data:
-    -log2_x.csv and log2_y.csv under data
+Sample format of training JSON files: log_nn.json
 
 - Explore pose matching for Kim/Meher/Kathy
     - Feature Engineering
