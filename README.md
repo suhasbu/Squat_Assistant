@@ -1,5 +1,5 @@
 ## Squat Assistant
-Sample format of training JSON files: log_nn.json
+
 
 ## Data Augmentation Ideas for Franco
 - Sample more non-apex (but near-apex) frames to use as examples of bad squats
