@@ -1,10 +1,10 @@
 import pickle
 filename = 'classifier.ipynb'
-joblib.dump(model_k, filename)
+pickle.dump(model_k, open(filename, 'wb'))
  
 # some time later...
  
 # load the model from disk
-loaded_model = joblib.load(filename)
-result = loaded_model.evaluate(X_test, y_test)
-print(result)
+loaded_model = pickle.load(open(filename, 'rb'))
+result = loaded_model.evaluate(X_train, y_train)
+result
