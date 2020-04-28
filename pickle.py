@@ -7,7 +7,7 @@ import pickle
 # load the model from disk
 def final_classify():
     
-    loaded_model = pickle.load(open('./data/model.sav, 'rb'))
+    loaded_model = pickle.load(open('./data/model.sav', 'rb'))
     result = loaded_model.predict(X_train)
     return result
 
