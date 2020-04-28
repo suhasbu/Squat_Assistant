@@ -26,7 +26,7 @@
 
 <body>  
     <div id="main-div">
-        <a href='/' class='jumbo'><span style="color:#fff">get</span><span style="color:#c0392b">fit</span></a>
+        <a href='/' class='jumbo'><span style="color:#fff">Squat</span><span style="color:#c0392b">Assistant</span></a>
         
     <video id="videoElement"></video>
     <div class='side-by-side'>
@@ -40,9 +40,40 @@
             <div>
                     <div class='output-button'>
                         <div id='eval-button-container'>
-                                <button class="ui button disabled" id='start-eval'>Start Eval</button>
-                                <button class="ui button disabled" id='calibrate'>Calibrate</button>
-                                <button class="ui button disabled" id='save'>Save</button>
+                                <button class="ui button disabled" id='start-eval'>Start Squat Tracking</button>
+                                <button class="ui button disabled" id='calibrate'>Start Exercise</button>
+                                <button class="ui button disabled" id='save'>Save Squat</button>
+		<button class="ui button " id='judge'>Judge Squat</button>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+    
+<script type=text/javascript>
+  $(function() {
+    $('#judge').bind(
+		'click', 
+		function() 
+		    {
+		$.ajax({
+   
+datatype:'json',
+  url: 'http://localhost:9000/bridge',
+  
+  success: function(data) {console.log(data); alert(data['status']);}
+});
+      		      
+
+   		     }
+	                 );
+  	         }
+       );
+
+
+    </script>
+
                                 <button class="ui button disabled" id='pause'>Toggle Pause</button>
                         </div>
     
