@@ -9,7 +9,7 @@ from sklearn.externals import joblib
 # load the model from disk
 def final_classify(X_train):
     
-    loaded_model = joblib.load(open('./data/model.pkl'))
+    loaded_model = joblib.load('./data/model.pkl')
     result = loaded_model.predict(X_train)
     return result
 
