@@ -8,11 +8,7 @@ run this in terminal to install keras: pip install keras
 # Load Dataset
 import pandas as pd
 import numpy as np
-import tensorflow as tf
-import keras
-from tensorflow.keras.models import Sequential
-from keras.layers import Dropout
-from tensorflow.keras.layers import Dense
+import json
 
 
 def genList(dataDictList, requiredParts, startIndex, stopIndex):
@@ -172,15 +168,16 @@ from sklearn.linear_model import LogisticRegression
 
 def classify(input):
     training = pd.read_csv('../data/apex.csv')
+    input_copy = input.copy()
     #Feature engineering
-        '''
+    '''
     Important features to look at for 'good' squats:
     1) angle at hip
     2) difference in x-coordinates of hip and ankle
     3) difference in y-coordinates of hip and knee
     '''
 
-    data = [training, training]
+    data = [training, input_copy]
     for tbl in data:
         tbl['xcoord_lhip_ank'] = tbl['leftHip_x'] - tbl['leftAnkle_x']
         tbl['ycoord_lhip_knee'] = tbl['leftHip_y'] - tbl['leftKnee_y']
@@ -191,24 +188,24 @@ def classify(input):
         tbl['right_hip_angle'] = np.arctan(tbl['ycoord_rhip_knee']/tbl['xcoord_rhip_ank'])
 
     y = training['good']
-    X = training.drop(['good'], axis=1)
+    X = training.drop(['good', 'entry'], axis=1)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=42)
     clf_log = LogisticRegression()
     clf_log = clf_log.fit(X_train,y_train)
-    y_pred_log = clf_log.predict(input)[0]
+    y_pred_log = clf_log.predict(input_copy)[0]
 
     # Evaluate the model Accuracy on test set
     return y_pred_log
 
 
 def integrate():
-	good = 1
-	path = "../data/log.json"
+    good = 1
+    path = "../data/log.json"
     tbl = findInputApex(path)
     good = classify(tbl)
-	if(good==1):
-		file1.write("Good Squat")
-	if(good==0):
-		file1.write("Bad Squat")
-	file1.close()
-	return good
+    if(good==1):
+    	file1.write("Good Squat")
+    if(good==0):
+    	file1.write("Bad Squat")
+    file1.close()
+    return good
