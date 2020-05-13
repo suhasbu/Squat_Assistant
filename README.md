@@ -32,7 +32,7 @@ python -m http.server
 Go to ```localhost:8000``` . Chrome is Recommended. 
 
 ## Acknowledgements
-* Course: UC Berkeley IEOR 135 Spring 2020 Applied Data Science with Venture Applications
+* Course: UC Berkeley IEOR 135/290 Spring-2020: Applied Data Science with Venture Applications
 * Course Staff: 
   * Instructors: Arash Nourian and Ikhlaq Sidhu
   * Project Coordinator: Harika Kalluri
