@@ -13,7 +13,7 @@ Many gym goers struggle with doing exercises in the right form and would benefit
 ## Packages/External Code
 * [PoseNet](https://github.com/tensorflow/tfjs-models/tree/master/posenet) 
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) 
-
+* [GetFit](https://devpost.com/software/getfit-tja3he), a project by other students on campus 
 
 ## Demo Videos
 Here are short demonstrations of the Squat Assistant.
@@ -38,4 +38,4 @@ Go to ```localhost:8000``` . Chrome is Recommended.
   * Project Coordinator: Harika Kalluri
   * GSIs: Lillian Dong, Zhi Li, Deirdre Quillen, Ishaan Malhi
 * Project Mentor: Ishaan Malhi
-* [GetFit](https://devpost.com/software/getfit-tja3he), a project by other students on campus 
+
