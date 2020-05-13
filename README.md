@@ -5,7 +5,7 @@
 * [Meher Arora](https://github.com/meherarora)
 * [Suhas B Umesh](https://github.com/suhasbu)
 * [Kimberly Chua](https://github.com/kimberlymchua)
-* Kathy Weng Ka Leng
+* [Kathy Weng Ka Leng](https://github.com/lengkaikai)
 
 ## Overview
 Many gym goers struggle with doing exercises in the right form and would benefit from form tracking and correction. However, it can be quite costly to hire a personal trainer to check their form, and often self teaching could lead to potential injury. The Squat Assistant aims to solve these issues by giving users a reliable and self-sufficient alternative which will inform and correct them when their squat form is incorrect.
