@@ -20,7 +20,7 @@ Here are short demonstrations of the Squat Assistant.
 * [Good Squat](https://drive.google.com/file/d/1ECyMKL80G-hDKeHzlvBrRAxMvgNQ7yoH/view?usp=sharing)
 * [Bad Squat](https://drive.google.com/file/d/1Zsu1nBgmwLyH4WNkSJScRL7RKAcaUjxM/view?usp=sharing)
 
-## Instruction to run (PLZ EDIT)
+## Instruction to run
 To run, Execute the python notebooks ```RunServer.ipynb``` and ```html/RunBridge.ipynb```. Alternately, 
 1. Start a server
 ```
