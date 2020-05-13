@@ -21,14 +21,15 @@ Here are short demonstrations of the Squat Assistant.
 * [Bad Squat](https://drive.google.com/file/d/1Zsu1nBgmwLyH4WNkSJScRL7RKAcaUjxM/view?usp=sharing)
 
 ## Instruction to run (PLZ EDIT)
-This is currently only a simple html-css-js project. Frameworks may be added when the simplicity becomes a bottleneck. 
-To run, download the repo and just start a simple server 
+To run, Execute the python notebooks ```RunServer.ipynb``` and ```html/RunBridge.ipynb```. Alternately, 
+1. Start a server
 ```
 python -m http.server
 ```
+2. Run ```app.py``` from the folder ```html```
 
-Go to ```localhost:8000``` on Chrome to see the site (as opposed to 0.0.0.0:8000) as camera on Chrome only runs on https or localhost. Then click on the debug card. That has eval running. 
 
+Go to ```localhost:8000``` . Chrome is Recommended. 
 
 ## Acknowledgements
 * Course: UC Berkeley IEOR 135 Spring 2020 Applied Data Science with Venture Applications
@@ -37,3 +38,4 @@ Go to ```localhost:8000``` on Chrome to see the site (as opposed to 0.0.0.0:8000
   * Project Coordinator: Harika Kalluri
   * GSIs: Lillian Dong, Zhi Li, Deirdre Quillen, Ishaan Malhi
 * Project Mentor: Ishaan Malhi
+* [GetFit](https://devpost.com/software/getfit-tja3he), a project by other students on campus 
