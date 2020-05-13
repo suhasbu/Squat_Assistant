@@ -9,9 +9,9 @@ def bridge():
 	file1.write(str(good))
 	file1.close()
 	if(good==1):
-		return jsonify(status="Good Squat")
+		return jsonify(status="That was a Good Squat!")
 	if(good==0):
-		return jsonify(status="Bad Squat")
+		return jsonify(status="Bad Squat! Try Again!")
 
 if __name__ == '__main__':
     from werkzeug.serving import run_simple
