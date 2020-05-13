@@ -204,8 +204,8 @@ def integrate():
     tbl = findInputApex(path)
     good = classify(tbl)
     if(good==1):
-    	file1.write("Good Squat")
+    	file1.write("That was a Good Squat!")
     if(good==0):
-    	file1.write("Bad Squat")
+    	file1.write("Bad Squat! Try Again!")
     file1.close()
     return good
